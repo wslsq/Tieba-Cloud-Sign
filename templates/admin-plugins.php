@@ -145,7 +145,7 @@ doAction('admin_plugins');
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">安装插件包</h4>
       </div>
-      <form action="<?php echo SYSTEM_URL ?>setting.php?mod=admin:tools&setting=install_plugin" onsubmit="$('#installplugin_button').attr('disabled',true);" method="post" enctype="multipart/form-data">
+      <form action="setting.php?mod=admin:tools&setting=install_plugin" onsubmit="$('#installplugin_button').attr('disabled',true);" method="post" enctype="multipart/form-data">
       <div class="modal-body">
         请浏览插件包：( ZIP格式 )
         <br/><br/><input type="file" name="plugin" required accept="application/zip" style="width:100%">
